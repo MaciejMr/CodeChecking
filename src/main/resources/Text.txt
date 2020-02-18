@@ -1,0 +1,4 @@
+[ to ( jest )] test
+[ tak ( ] nie ) jest dobrze
+[ tak ] jest { ok }
+[ tak ] już { nie )
