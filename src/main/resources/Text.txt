@@ -1,4 +1,4 @@
-[ to ( jest )] test
-[ tak ( ] nie ) jest dobrze
-[ tak ] jest { ok }
-[ tak ] już { nie )
+"[ to ( jest )] test" - poprawnie
+"[ tak ( ] nie ) jest dobrze" - niepoprawnie
+"[ tak ] jest { ok }" - poprawnie
+"[ tak ] już { nie )" - niepoprawnie

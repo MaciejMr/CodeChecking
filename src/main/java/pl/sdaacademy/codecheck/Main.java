@@ -1,20 +1,19 @@
 package pl.sdaacademy.codecheck;
 
-import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.util.stream.Stream;
 
 public class Main {
-    public static void main(String[] pArgs) throws IOException {
+    public static void main(String[] args) throws IOException {
         String fileName = "C:\\Users\\MM\\Desktop\\SDA\\check_code\\src\\main\\resources\\Text.txt";
-        File file = new File(fileName);
+        FileReader fileReader = new FileReader(fileName);
 
-        try (Stream linesStream = Files.lines(file.toPath())) {
-            System.out.println(linesStream);
-            linesStream.forEach(line -> {
-                System.out.println(line);
-            });
+        try (BufferedReader bufferedReader = new BufferedReader(fileReader)) {
+            String oneLine;
+            while((oneLine = bufferedReader.readLine()) != null) {
+                System.out.println(new CodeCheck().checkCode(oneLine));
+            };
         }
     }
 }
