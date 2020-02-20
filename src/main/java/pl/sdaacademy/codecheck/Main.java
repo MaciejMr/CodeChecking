@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String fileName = "C:\\Users\\MM\\Desktop\\SDA\\check_code\\src\\main\\resources\\Text.txt";
+        String fileName = "./src\\main\\resources\\Text.txt";
         FileReader fileReader = new FileReader(fileName);
 
         try (BufferedReader bufferedReader = new BufferedReader(fileReader)) {

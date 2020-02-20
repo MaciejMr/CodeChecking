@@ -11,8 +11,8 @@ class CodeCheckTest {
         //given
         String codeLine = "[ tak ( ] nie ) jest dobrze";
         //when
-        boolean codeCheck = new CodeCheck().checkParenthesis(codeLine);
+        String codeCheck = new CodeCheck().checkParenthesis(codeLine);
         //then
-        assertEquals(codeCheck, false);
+        assertEquals(codeCheck, "niepoprawnie");
     }
 }

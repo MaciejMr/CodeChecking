@@ -3,7 +3,7 @@ package pl.sdaacademy.codecheck;
 import java.util.Stack;
 
 public class CodeCheck {
-    public static boolean checkParenthesis(String string) {
+    public static String checkParenthesis(String string) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < string.length(); i++) {
             char ch = string.charAt(i);
@@ -11,18 +11,18 @@ public class CodeCheck {
                 stack.push(ch);
             } else if ( ch == ']') {
                 if (stack.pop() != '[') {
-                    return false;
+                    return "niepoprawnie";
                 }
             } else if ( ch == ')') {
                 if (stack.pop() != '(') {
-                    return false;
+                    return "niepoprawnie";
                 }
             } else if ( ch == '}') {
                 if (stack.pop() != '{') {
-                    return false;
+                    return "niepoprawnie";
                 }
             }
         }
-        return stack.isEmpty();
+        return "poprawnie";
     }
 }
