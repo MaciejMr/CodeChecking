@@ -12,6 +12,7 @@ public class Main {
         try (BufferedReader bufferedReader = new BufferedReader(fileReader)) {
             String oneLine;
             while((oneLine = bufferedReader.readLine()) != null) {
+                System.out.println(oneLine);
                 System.out.println(new CodeCheck().checkCode(oneLine));
             };
         }
