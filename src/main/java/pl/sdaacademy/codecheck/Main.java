@@ -13,7 +13,7 @@ public class Main {
             String oneLine;
             while((oneLine = bufferedReader.readLine()) != null) {
                 System.out.println(oneLine);
-                System.out.println(new CodeCheck().checkCode(oneLine));
+                System.out.println(new CodeCheck().checkParenthesis(oneLine));
             };
         }
     }
