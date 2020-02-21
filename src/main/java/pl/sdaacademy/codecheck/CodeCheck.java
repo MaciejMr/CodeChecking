@@ -3,7 +3,7 @@ package pl.sdaacademy.codecheck;
 import java.util.Stack;
 
 public class CodeCheck {
-    public static String checkParenthesis(String string) {
+    public String checkParenthesis(String string) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < string.length(); i++) {
             char ch = string.charAt(i);
